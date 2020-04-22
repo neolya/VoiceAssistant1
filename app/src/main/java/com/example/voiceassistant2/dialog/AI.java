@@ -121,7 +121,7 @@ public class AI{
         long difference = dateOne.getTime() - dateTwo.getTime();
         // Перевод количества дней между датами из миллисекунд в дн
         int diff =  (int)(difference / (24 * 60 * 60 * 1000)); // миллисекунды / (24ч * 60мин * 60сек * 1000мс)
-        return diff; //jjjjjjjj
+        return diff;
     }
 
     public void getAnswer(String question, final Consumer<String> callback) {
@@ -129,7 +129,7 @@ public class AI{
         question = question.toLowerCase();
 
         Pattern convertPattern = Pattern.compile("перевести число (\\d+)"); // задаем текст запроса
-        Matcher convertMatcher = convertPattern.matcher(question);
+        Matcher convertMatcher = convertPattern.matcher(question); //uuu
 
         Pattern cityPattern = Pattern.compile("погода в городе (\\p{L}+)", Pattern.CASE_INSENSITIVE); // задаем текст запроса
         Matcher cityMatcher = cityPattern.matcher(question);
