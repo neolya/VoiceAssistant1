@@ -52,7 +52,7 @@ public class AI{
         dictionary.put("сколько дней до лета", "блин блинский, до лета "+ String.valueOf(daysToSummer) + " дня");
     }
 
-    private String getDegreeEnding(int b) {
+    public String getDegreeEnding(int b) {
         int a = Math.abs(b);
         if(a>=5 && a <=20)
             return " градусов ";
