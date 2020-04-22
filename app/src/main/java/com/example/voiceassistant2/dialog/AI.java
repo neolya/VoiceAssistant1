@@ -121,7 +121,7 @@ public class AI{
         long difference = dateOne.getTime() - dateTwo.getTime();
         // Перевод количества дней между датами из миллисекунд в дн
         int diff =  (int)(difference / (24 * 60 * 60 * 1000)); // миллисекунды / (24ч * 60мин * 60сек * 1000мс)
-        return diff;
+        return diff; //jjjjjjjj
     }
 
     public void getAnswer(String question, final Consumer<String> callback) {
