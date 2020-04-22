@@ -129,7 +129,7 @@ public class AI{
         question = question.toLowerCase();
 
         Pattern convertPattern = Pattern.compile("перевести число (\\d+)"); // задаем текст запроса
-        Matcher convertMatcher = convertPattern.matcher(question);
+        Matcher convertMatcher = convertPattern.matcher(question); //uuu
 
         Pattern cityPattern = Pattern.compile("погода в городе (\\p{L}+)", Pattern.CASE_INSENSITIVE); // задаем текст запроса
         Matcher cityMatcher = cityPattern.matcher(question);
